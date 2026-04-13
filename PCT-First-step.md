@@ -14,3 +14,6 @@ systemctl restart systemd-resolved
 getent ahosts google.com
 ping -c 3 google.com
 apt update
+
+
+source ~/.abbt/env.sh
