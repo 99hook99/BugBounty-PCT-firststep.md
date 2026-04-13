@@ -1,4 +1,4 @@
-IFACE=$(ip route | awk '/default/ {print $5; exit}')
+```IFACE=$(ip route | awk '/default/ {print $5; exit}')
 
 systemctl restart systemd-resolved
 resolvectl dns "$IFACE" 1.1.1.1 8.8.8.8
